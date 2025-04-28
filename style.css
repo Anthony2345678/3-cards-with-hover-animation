@@ -1,0 +1,54 @@
+CSS
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    justify-content: space-between;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    transition: rotateY(180deg);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+   align-items: stretch;
+   perspective: 1000px;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+
+
+
